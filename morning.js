@@ -18,14 +18,14 @@ xml.onreadystatechange = function(){
 		var dataParse = JSON.parse(data);
 //hot shop的内容
 		putImg1[0].innerHTML = "<img src='"+dataParse.img+"'>";
-		putText1[0].innerHTML = "<a src ='"+dataParse.aherf+"'>"+dataParse.a+"</a>"+
+		putText1[0].innerHTML = "<a href ='"+dataParse.aherf+"'>"+dataParse.a+"</a>"+
 		                       "<p>"+dataParse.projects[0].p+"</p>"+
 		                       "<p>"+dataParse.projects[1].p+"</p>"+
 		                       "<p>"+dataParse.projects[2].p+"</p>";
         putImg1[2].innerHTML = putImg1[1].innerHTML = putImg1[0].innerHTML;
         putText1[2].innerHTML = putText1[1].innerHTML = putText1[0].innerHTML;
         putImg[0].innerHTML = "<img src='"+dataParse.img1+"'>";
-		putText[0].innerHTML = "<a src ='"+dataParse.aherf+"'>"+dataParse.a1+"</a>"+
+		putText[0].innerHTML = "<a href ='"+dataParse.aherf+"'>"+dataParse.a1+"</a>"+
 		                       "<p>"+dataParse.projects[0].p+"</p>"+
 		                       "<p>"+dataParse.projects[1].p+"</p>"+
 		                       "<p>"+dataParse.projects[2].p+"</p>";
