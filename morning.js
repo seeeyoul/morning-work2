@@ -33,37 +33,11 @@ xml.onreadystatechange = function(){
         putText[2].innerHTML = putText[1].innerHTML = putText[0].innerHTML;
 
 //红人骚客
-        touch_img[0].innerHTML = "<img src='"+dataParse.pepimg[0].img+"'>";
-        touch_img[1].innerHTML = "<img src='"+dataParse.pepimg[1].img+"'>";
-        touch_img[2].innerHTML = "<img src='"+dataParse.pepimg[2].img+"'>";
-        touch_img[3].innerHTML = "<img src='"+dataParse.pepimg[3].img+"'>";
-        touch_img[4].innerHTML = "<img src='"+dataParse.pepimg[4].img+"'>";
-        touch_img[5].innerHTML = "<img src='"+dataParse.pepimg[5].img+"'>";
-        touch_img[6].innerHTML = "<img src='"+dataParse.pepimg[6].img+"'>";
-        touch_img[7].innerHTML = "<img src='"+dataParse.pepimg[7].img+"'>";
-        touch_img[8].innerHTML = "<img src='"+dataParse.pepimg[8].img+"'>";
-        touch_img[9].innerHTML = "<img src='"+dataParse.pepimg[9].img+"'>";
-        touch_img[10].innerHTML = "<img src='"+dataParse.pepimg[10].img+"'>";
-        content[1].innerHTML = "<p>"+dataParse.pepcont[0].p1+"</p>"+
-		                       "<p>"+dataParse.pepcont[0].p2+"</p>";
-		content[2].innerHTML = "<p>"+dataParse.pepcont[1].p1+"</p>"+
-		                       "<p>"+dataParse.pepcont[1].p2+"</p>";
-        content[3].innerHTML = "<p>"+dataParse.pepcont[2].p1+"</p>"+
-		                       "<p>"+dataParse.pepcont[2].p2+"</p>";
-		content[4].innerHTML = "<p>"+dataParse.pepcont[3].p1+"</p>"+
-		                       "<p>"+dataParse.pepcont[3].p2+"</p>";
-		content[5].innerHTML = "<p>"+dataParse.pepcont[4].p1+"</p>"+
-		                       "<p>"+dataParse.pepcont[4].p2+"</p>";
-        content[6].innerHTML = "<p>"+dataParse.pepcont[5].p1+"</p>"+
-		                       "<p>"+dataParse.pepcont[5].p2+"</p>";
-		content[7].innerHTML = "<p>"+dataParse.pepcont[6].p1+"</p>"+
-		                       "<p>"+dataParse.pepcont[6].p2+"</p>";
-		content[8].innerHTML = "<p>"+dataParse.pepcont[7].p1+"</p>"+
-		                       "<p>"+dataParse.pepcont[7].p2+"</p>";
-        content[9].innerHTML = "<p>"+dataParse.pepcont[8].p1+"</p>"+
-		                       "<p>"+dataParse.pepcont[8].p2+"</p>";
-		content[10].innerHTML = "<p>"+dataParse.pepcont[9].p1+"</p>"+
-		                       "<p>"+dataParse.pepcont[9].p2+"</p>";
+        for(var i = 0;i <= 10;i++){
+			touch_img[i].innerHTML = "<img src='"+dataParse.pepimg[i].img+"'>";			
+			content[i+1].innerHTML = "<p>"+dataParse.pepcont[i].p1+"</p>"+
+		                       "<p>"+dataParse.pepcont[i].p2+"</p>";		
+	}
 	}
 }
 window.onload = function(){
